@@ -135,7 +135,7 @@
 @media (max-width: 500px) {
 
     #portfolio-section {
-        padding-top: 0;
+        padding-top: 50px;
         padding-bottom: 0;
     }
 
@@ -187,6 +187,7 @@
     }
 
     .arrow-left {
+        transform: rotate(-45deg);
         scale: 60%;
         padding-bottom: 0;
     }

@@ -16,10 +16,7 @@ export class BurgerMenuComponent {
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 110,
-        behavior: 'smooth'
-      });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     this.burgerMenuService.toggleMenu();
   }

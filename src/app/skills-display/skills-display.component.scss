@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 200px;
-    max-width: 1920px;
+    padding-top: 150px;
 }
 
 .skills-display {
@@ -55,13 +54,12 @@
 .arrow-right div {
     display: flex;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1340px;
     justify-content: flex-start;
 }
 
 .arrow-right img {
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 @media (max-width: 1440px) {
@@ -92,10 +90,6 @@
 @media (max-width: 900px) {
     .skills-display, .arrow-right div {
         max-width: 600px !important;
-    }
-
-    .arrow-right div {
-        justify-content: center;
     }
 }
 
@@ -143,11 +137,17 @@
     }
 
     #skills-section {
-        padding-top: 50px;
+        padding-top: 70px;
+    }
+
+    .arrow-right div {
+        justify-content: center;
     }
 
     .arrow-right img {
-        scale: 80%;
+        transform: rotate(45deg);
+        scale: 60%;
+        padding-bottom: 0 !important;
         padding-top: 0;
     }
 }

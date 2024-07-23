@@ -122,6 +122,10 @@
     border: 4px solid black;
     padding: 10px 20px;
     border-radius: 10px;
+    &:hover {
+        scale: 110%;
+        border-color: #5988FF;
+    }
 }
 
 .el-pollo-loco-display {
@@ -137,7 +141,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 1920px;
 }
 
 .arrow-left div {
