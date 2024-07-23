@@ -1,0 +1,129 @@
+#contactform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 20%);
+    padding-bottom: 100px;
+    gap: 30px;
+    color: #FFFCF3;
+
+    #messageForm {
+        width: 100%;
+        max-width: 500px;
+
+        .message-box {
+            >img {
+                align-self: flex-start;
+                padding-top: 20px;
+            }
+        }
+
+        .message-box textarea {
+            resize: none;
+            height: 150px;
+        }
+        
+        .name-box.with-content, .email-box.with-content, .message-box.with-content {
+            border: 2px solid #FFFCF3 !important;
+        }
+
+        .input-labels {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: black;
+            width: fit-content; 
+            padding-left: 5px;
+            padding-right: 5px;     
+        }
+
+        .input-labels, .error-message {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.15s linear;
+        }
+        
+        .input-labels.visible, .error-message.visible {
+            visibility: visible;
+            opacity: 1;
+        }  
+
+        .error-message {
+            color: #FF3C4A;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+
+        .visible {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .hidden {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    #privacyCheck {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-top: 20px;
+
+        #checkBox {
+            height: 24px;
+            width: 24px;
+            &:hover {
+                cursor: pointer;
+                scale: 120%;
+            }
+        }
+
+        .privacyInfo {
+            ::ng-deep > a {
+                color: #5988FF;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.title {
+    align-self: flex-start;
+    padding-top: 220px;
+    padding-left: 100px;
+    font-size: 78px;
+    font-weight: 800;
+}
+
+
+#submitButton {
+    background-color: transparent;
+    color: #FFFCF3;
+    font-size: 23px;
+    border: 4px solid #FFFCF3;
+    padding: 20px 50px 20px 50px;
+    align-self: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor: not-allowed;
+}
+
+.enabled-button {
+    opacity: 100%;
+    cursor: pointer !important;
+    &:hover {
+        scale: 110%;
+    }
+}
+
+.disabled-button {
+    opacity: 50%;
+}

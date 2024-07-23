@@ -1,0 +1,67 @@
+@media (max-width: 700px) {
+
+    #contactform {
+        clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 10%);
+    }
+
+    .title {
+        font-size: 44px !important;
+        padding-left: 50px !important;
+    }
+
+    #messageForm {
+        max-width: 350px !important;
+    }
+
+    .contactform-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contactform-title-helper {
+        text-align: center;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #contactform {
+        clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 5%);
+        padding-bottom: 50px !important;
+    }
+
+    #messageForm {
+        max-width: 250px !important;
+    }
+
+    .title {
+        padding-top: 120px !important;
+        padding-left: 0px !important;
+        align-self: center !important;
+    }
+    
+    .contactform-container {
+        padding-top: 50px;
+    }
+
+    .contactform-title {
+        font-size: 20px !important;
+        width: 70%;
+    }
+
+    .contactform-title-helper {
+        width: 70%;
+        font-size: 12px !important;
+    }
+
+    #submitButton {
+        font-size: 18px !important;
+    }
+
+    .privacyInfo {
+        font-size: 8px !important;
+    }
+
+}

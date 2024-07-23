@@ -1,0 +1,107 @@
+.footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin-top: -10px;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 60px;
+            padding-left: 70px;
+            color: #FFFCF3;
+            gap: 30px;
+            .logo {
+                font-weight: 800;
+                font-size: 32px;
+            }
+            .copyright {
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 25px;
+            padding-bottom: 60px;
+            padding-right: 70px;
+            >img {
+                padding-bottom: 50px;
+                &:hover {
+                    scale: 120%;
+                    cursor: pointer;
+                } 
+            }
+
+            .links {
+                display: flex;
+                gap: 30px;
+                >a {
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(120%);
+                    }
+                }
+            }
+
+            .legal {
+                color: #FFFCF3;
+                font-weight: 400;
+                font-size: 18px;
+                text-decoration: none;
+                &:hover {
+                    transform: scale(120%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .right-section {
+        padding-right: 35px !important;
+    }
+
+    .left-section {
+        padding-left: 35px !important;
+    }
+
+    .links {
+        gap: 15px !important;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .right-section {
+        padding-right: 20px !important;
+    }
+
+    .left-section {
+        padding-left: 20px !important;
+    }
+
+    .logo {
+        font-size: 24px !important;
+    }
+
+    .copyright {
+        font-size: 12px !important;
+    }
+
+    .links {
+        gap: 5px !important;
+    }
+
+
+}

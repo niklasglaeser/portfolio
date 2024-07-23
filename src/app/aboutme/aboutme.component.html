@@ -1,0 +1,19 @@
+<div id="aboutme">
+    <div class="aboutme-title fontSyne">{{ 'aboutme-link' | translate }}</div> 
+    
+    <div class="aboutme-section">
+        <div class="aboutme-text fontOverpass">
+            {{ 'ABOUT_ME' | translate }}<br><br>
+            {{ 'CONTACT_ME' | translate }}<br><br><br><br>
+            <button class="lets-talk-button fontOverpass" (click)="scrollToSection('contactform')" >{{ 'LETS_TALK' | translate }}</button>
+        </div>
+        <div class="profile-picture">
+            <img src="/assets/img/profile-picture-color.jpg">
+        </div>
+    </div>
+    <div class="arrow-left">
+        <div>
+            <img src="/assets/img/arrow-left.png">
+        </div>
+    </div>
+</div>

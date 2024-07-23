@@ -1,0 +1,41 @@
+<div id="contactform">
+    <div class="title fontSyne ">{{ 'SAY_HI' | translate }}</div>
+    <div class="contactform-container">
+        <div class="contactform-title fontOverpass">{{ 'DISCUSS_PROJECT' | translate }}</div>
+        <div class="contactform-title-helper fontOverpass">{{ 'SAY_HELLO' | translate }}</div>
+        <form (ngSubmit)="onSubmit(contactForm)" id="messageForm" #contactForm="ngForm">
+            <div class="input-labels fontOverpass" [ngClass]="{'visible': contactData.name}">{{ 'YOUR_NAME' | translate }}</div>
+            <div class="name-box" [ngClass]="{'with-content': contactData.name}">
+                <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" id="nameInput" class="fontOverpass" [placeholder]="'YOUR_NAME' | translate" required>
+                <img *ngIf="!name.valid && name.touched && !name.disabled" src="/assets/img/error.png">
+                <img *ngIf="name.valid && name.touched" src="/assets/img/valid.png">
+            </div>
+            <div class="error-message fontOverpass" [ngClass]="{'visible': !name.valid && name.touched && !name.disabled}">{{ 'PLEASE_ENTER_NAME' | translate }}</div>
+            
+            <div class="input-labels fontOverpass" [ngClass]="{'visible': contactData.email}">{{ 'YOUR_EMAIL' | translate }}</div>
+            <div class="email-box" [ngClass]="{'with-content': contactData.email}">
+                <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="emailInput" class="fontOverpass" [placeholder]="'YOUR_EMAIL' | translate" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <img *ngIf="!email.valid && email.touched && !email.disabled" src="/assets/img/error.png">
+                <img *ngIf="email.valid && email.touched" src="/assets/img/valid.png">
+            </div>
+            <div class="error-message fontOverpass" [ngClass]="{'visible': !email.valid && email.touched && !email.disabled}">{{ 'PLEASE_ENTER_EMAIL' | translate }}</div>
+            
+            <div class="input-labels fontOverpass" [ngClass]="{'visible': contactData.message}">{{ 'YOUR_MESSAGE' | translate }}</div>
+            <div class="message-box" [ngClass]="{'with-content': contactData.message}">
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" [placeholder]="'YOUR_MESSAGE' | translate" class="fontOverpass" id="messageInput" required></textarea>
+                <img *ngIf="!message.valid && message.touched && !message.disabled" src="/assets/img/error.png">
+                <img *ngIf="message.valid && message.touched" src="/assets/img/valid.png">
+            </div>
+            <div class="error-message fontOverpass" [ngClass]="{'visible': !message.valid && message.touched && !message.disabled}">{{ 'PLEASE_ENTER_MESSAGE' | translate }}</div>
+            
+            <div id="privacyCheck" class="fontOverpass">
+                <div id="checkBox" (click)="toggleCheckbox()">
+                    <img *ngIf="!contactData.privacyPolicy" src="/assets/img/unchecked.png">
+                    <img *ngIf="contactData.privacyPolicy" src="/assets/img/checked.png">
+                </div>
+                <div class="privacyInfo" [innerHTML]="'PRIVACY_POLICY' | translate"></div>
+            </div>
+            <button type="submit" id="submitButton" class="fontOverpass" [disabled]="!contactForm.form.valid || !contactData.privacyPolicy" [ngClass]="{'enabled-button': contactForm.form.valid && contactData.privacyPolicy, 'disabled-button': !contactForm.form.valid || !contactData.privacyPolicy}">{{ 'SEND_MESSAGE' | translate }}</button>
+        </form>
+    </div>
+</div>

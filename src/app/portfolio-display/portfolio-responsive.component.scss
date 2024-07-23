@@ -1,0 +1,206 @@
+@media (max-width: 1440px) {
+
+    .join-display, .el-pollo-loco-display, .arrow-left div {
+        max-width: 1050px;
+    }
+
+}
+
+
+@media (max-width: 1150px) {
+
+    .join-display, .el-pollo-loco-display, .arrow-left div {
+        max-width: 950px !important;
+    }
+
+    .links a {
+        font-size: 24px;
+    }
+
+    .order {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    
+}
+
+@media (max-width: 1100px) {
+
+    .join-display, .el-pollo-loco-display {
+        align-items: center;
+    }
+
+    .container img {
+        filter: none;
+    }
+
+    .skills {
+        color: #5988FF;
+    }
+
+    .links a {
+        color: #5988FF;
+    }
+
+    .name {
+        font-size: 35px;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .links {
+        font-size: 28px;
+    }
+    
+}
+
+@media (max-width: 1050px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join-description, .pollo-loco-description {
+        align-items: center;
+        width: 70%;
+    }
+
+    .pollo-loco-description {
+        order: 1;
+    }
+
+    .container {
+        >img {
+            width: 70%;
+        }
+    }
+
+    .explanation {
+        text-align: center;
+    }
+
+    .arrow-left {
+        padding-top: 100px;
+    }
+
+    
+}
+
+@media (max-width: 900px) {
+
+    .title {
+        font-size: 60px;
+    }
+
+    .title-helper {
+        font-size: 18px;
+    }
+
+    .join-display, .el-pollo-loco-display, .arrow-left div {
+        max-width: 700px !important;
+    }
+
+    .arrow-left div {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .join-display, .el-pollo-loco-display, .arrow-left div {
+        max-width: 500px !important;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+
+    .title-helper {
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .arrow-left {
+        padding-top: 0;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #portfolio-section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .join-display, .el-pollo-loco-display, .arrow-left div {
+        max-width: 300px !important;
+    }
+
+    .join-display {
+        padding-bottom: 50px;
+    }
+
+    .container {
+        gap: 25px !important;
+    }
+
+    .container img {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 32px !important;
+    }
+
+    .title-helper {
+        padding-bottom: 50px;
+    }
+
+    .links {
+        gap: 50px !important;
+    }
+
+    .links a {
+        padding: 10px 5px !important;
+        font-size: 15px !important;
+        scale: 120%;
+        border: 2px solid black !important;
+    }
+
+    .skills {
+        font-size: 18px !important;
+    }
+
+    .name {
+        font-size: 20px !important;
+    }
+
+    .explanation {
+        font-size: 14px !important;
+    }
+
+    .arrow-left {
+        scale: 60%;
+        padding-bottom: 0;
+    }
+
+    .portfolio-display {
+        padding-top: 0 !important;
+    }
+
+    .order {
+        padding-left: 0;
+        padding-right: 0;
+        align-self: center !important;
+        font-size: 34px !important;
+    }
+
+}
+

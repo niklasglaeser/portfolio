@@ -1,0 +1,25 @@
+<div id="burger-menu" [class.show]="burgerMenuService.getMenuState()">
+    <div class="burger-menu-links fontSyne">
+        <div (click)="scrollToSection('aboutme')">{{ 'aboutme-link' | translate }}</div>
+        <div (click)="scrollToSection('skills-section')">{{ 'skills-link' | translate }}</div>
+        <div (click)="scrollToSection('portfolio-section')">Portfolio</div>
+      </div>
+      
+    <div class="burger-menu-footer">
+        <div class="left-section">
+            <div class="say-hi fontSyne ">{{ 'contact-cta' | translate }}</div>
+            <div class="mail fontOverpass">info&#64;niklasglaeser.de</div>
+        </div>
+        <div class="right-section">
+            <a href="https://github.com/niklasglaeser" target="_blank">
+                <img src="/assets/img/github-icon.png">
+            </a>
+            <a href="mailto:info@niklasglaeser.de" target="_blank">
+                <img src="/assets/img/email-icon.png">
+            </a>
+            <a href="https://www.linkedin.com/in/niklas-gl%C3%A4ser-5b691117a/" target="_blank">
+                <img src="/assets/img/linkedin-icon.png">
+            </a>
+        </div>
+    </div>
+</div>

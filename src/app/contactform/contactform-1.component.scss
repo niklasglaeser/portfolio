@@ -1,0 +1,81 @@
+.contactform-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.contactform-title {
+    color: #5988FF;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+.contactform-title-helper {
+    color: #FFFCF3;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+#messageForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-box,
+.email-box,
+.message-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: border 0.3s linear;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #FFFCF3;
+    border-radius: 5px;
+}
+
+.name-box img,
+.email-box img,
+.message-box img {
+    position: relative;
+    right: 8px;
+}
+
+.name-box:hover,
+.email-box:hover,
+.message-box:hover {
+    border: 2px solid #FFFCF3;
+}
+
+.name-box input,
+.email-box input,
+.message-box textarea {
+    background: transparent;
+    border: none;
+    color: #FFFCF3;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
+}
+
+.name-box input:focus,
+.email-box input:focus,
+.message-box textarea:focus {
+    outline: none;
+}
+
+.name-box input:hover,
+.email-box input:hover,
+.message-box textarea:hover {
+    cursor: pointer;
+}
+
+.name-box input::placeholder,
+.email-box input::placeholder,
+.message-box textarea::placeholder {
+    color: #FFFCF3;
+    padding-left: 5px;
+}

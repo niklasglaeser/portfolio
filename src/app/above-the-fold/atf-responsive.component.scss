@@ -1,0 +1,72 @@
+@media (max-width: 1440px) {
+
+
+    .title {
+        font-size: 100px !important;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 80px !important;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .title {
+        font-size: 55px !important;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .title-helper {
+        padding-bottom: 50px !important;
+    }
+
+    .title-mail {
+        left: -40px;
+    }
+
+    .scroll-down {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    .title {
+        font-size: 36px !important;
+    }
+
+    .title-scroll {
+        position: relative;
+        right: 20px;
+        top: 20px;
+        padding-right: 0px !important;
+    }
+
+    .scroll-arrow-animation {
+        position: relative;
+        right: 20px;
+    }
+
+    .scroll-down {
+        scale: 80%;
+    }
+
+    .title-mail {
+        scale: 70%;
+        left: -60px !important;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+} 

@@ -1,0 +1,9 @@
+<div class="header fontSyne">
+    <a href="" class="left">[NG]</a>
+    <div class="right">
+        <img class="language" *ngIf="currentLanguage === 'de'" (click)="switchLanguage('en')" src="/assets/img/english-flag.svg">
+        <img class="language" *ngIf="currentLanguage === 'en'" (click)="switchLanguage('de')" src="/assets/img/german-flag.svg">
+        <img id="burgerMenu" (click)="handleBurgerMenu()" [src]="burgerMenuService.getIconState()" *ngIf="showBurgerMenu">
+        <a class="goHome" href="" *ngIf="showGoBackButton"><img src="/assets/img/home.png"></a>
+    </div>
+</div>

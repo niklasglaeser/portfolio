@@ -1,0 +1,74 @@
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    width: 100%;
+    max-width: 1920px;
+    height: 35px;
+    padding: 20px 0px 20px 0px;
+    font-weight: 800;
+    background-color: #FFFCF3;
+    z-index: 500;
+
+    .left {
+        padding-left: 30px;
+        text-decoration: none;
+        color: black;
+        &:hover {
+            transform: scale(120%);
+        }
+    }
+
+    .right {
+        display: flex;
+        gap: 30px;
+        padding-right: 30px;
+        >img {
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+            &:hover {
+                transform: scale(120%);
+            }
+        }
+
+        .language {
+            scale: 120%;
+            &:hover {
+                cursor: pointer;
+                scale: 130%;
+            }
+        }
+    }
+}
+
+.goHome {
+    &:hover {
+        scale: 120%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .header {
+        height: 25px;
+        font-size: 20px !important;
+        padding: 10px 0 10px 0 !important;
+    }
+
+    .right img {
+        height: 24px !important;
+        width: 24px !important;
+    }
+
+    .left {
+        padding-left: 15px !important;
+    }
+
+    .right {
+        padding-right: 15px !important;
+        gap: 20px !important;
+    }
+}
