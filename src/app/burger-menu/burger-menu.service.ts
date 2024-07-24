@@ -8,6 +8,7 @@ export class BurgerMenuService {
 
   toggleMenu() {
     this.isVisible = !this.isVisible;
+    this.updateBodyClass();
   }
 
   getMenuState() {
@@ -16,5 +17,13 @@ export class BurgerMenuService {
 
   getIconState() {
     return this.isVisible ? 'assets/img/close-burger-menu.png' : 'assets/img/burger-menu-icon.png';
+  }
+
+  private updateBodyClass() {
+    if (this.isVisible) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
   }
 }

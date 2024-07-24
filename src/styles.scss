@@ -153,3 +153,7 @@ body {
 .scroll-animation.show {
   animation: fadeIn 0.5s linear forwards;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
