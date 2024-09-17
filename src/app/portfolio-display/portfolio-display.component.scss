@@ -33,6 +33,14 @@
     padding-bottom: 100px;
 }
 
+.dabubble-display {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1340px;
+    padding-bottom: 100px;
+}
+
 .join-display:hover .container img {
     filter: none;
 }
@@ -54,6 +62,13 @@
 .join-display {
 
     .order {
+        align-self: flex-start;
+    }
+}
+
+.dabubble-display {
+
+    .order {
         align-self: flex-end;
     }
 }
@@ -61,7 +76,7 @@
 .el-pollo-loco-display {
     
     .order {
-        align-self: flex-start;
+        align-self: flex-end;
     }
 }
 
@@ -85,7 +100,8 @@
 }
 
 .join-description,
-.pollo-loco-description {
+.pollo-loco-description,
+.dabubble-description {
     display: flex;
     flex-direction: column;
     justify-content: center;

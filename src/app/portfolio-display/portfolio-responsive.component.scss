@@ -1,6 +1,6 @@
 @media (max-width: 1440px) {
 
-    .join-display, .el-pollo-loco-display, .arrow-left div {
+    .join-display, .el-pollo-loco-display, .dabubble-display, .arrow-left div {
         max-width: 1050px;
     }
 
@@ -9,7 +9,7 @@
 
 @media (max-width: 1150px) {
 
-    .join-display, .el-pollo-loco-display, .arrow-left div {
+    .join-display, .el-pollo-loco-display, .dabubble-display, .arrow-left div {
         max-width: 950px !important;
     }
 
@@ -27,7 +27,7 @@
 
 @media (max-width: 1100px) {
 
-    .join-display, .el-pollo-loco-display {
+    .join-display, .el-pollo-loco-display, .dabubble-display {
         align-items: center;
     }
 
@@ -64,7 +64,7 @@
         align-items: center;
     }
 
-    .join-description, .pollo-loco-description {
+    .join-description, .pollo-loco-description, .dabubble-description {
         align-items: center;
         width: 70%;
     }
@@ -72,6 +72,11 @@
     .pollo-loco-description {
         order: 1;
     }
+
+    .join-description {
+        order: 2;
+    }
+
 
     .container {
         >img {
@@ -100,7 +105,7 @@
         font-size: 18px;
     }
 
-    .join-display, .el-pollo-loco-display, .arrow-left div {
+    .join-display, .el-pollo-loco-display, .dabubble-display, .arrow-left div {
         max-width: 700px !important;
     }
 
@@ -112,7 +117,7 @@
 
 @media (max-width: 700px) {
 
-    .join-display, .el-pollo-loco-display, .arrow-left div {
+    .join-display, .el-pollo-loco-display, .dabubble-display, .arrow-left div {
         max-width: 500px !important;
     }
 
@@ -139,7 +144,7 @@
         padding-bottom: 0;
     }
 
-    .join-display, .el-pollo-loco-display, .arrow-left div {
+    .join-display, .el-pollo-loco-display, .dabubble-display, .arrow-left div {
         max-width: 300px !important;
     }
 
